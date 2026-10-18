@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西语长文本高级语法辨析</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.9; }
+        h1 { text-align: center; color: #2c3e50; border-bottom: 3px solid #34495e; padding-bottom: 15px; margin-bottom: 30px; }
+        .tips { background: #e8f4fd; padding: 15px 20px; border-radius: 8px; border-left: 5px solid #2980b9; margin-bottom: 25px; font-size: 15px; }
+        .story-container { background: #fff; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); margin-bottom: 30px; font-size: 17px; color: #2c3e50; }
+        .story-title { font-weight: bold; font-size: 20px; color: #8e44ad; margin-bottom: 15px; border-bottom: 1px dashed #ccc; padding-bottom: 10px; }
+        input[type="text"] { padding: 5px 10px; border: 1px solid #bdc3c7; border-radius: 4px; width: 140px; font-size: 16px; margin: 0 4px; text-align: center; font-weight: bold; color: #2980b9; transition: all 0.3s; }
+        input:focus { outline: none; border-color: #3498db; box-shadow: 0 0 8px rgba(52, 152, 219, 0.4); }
+        input.correct { border-color: #27ae60; background-color: #eafaf1; color: #27ae60; }
+        input.incorrect { border-color: #e74c3c; background-color: #fdedec; color: #e74c3c; }
+        button { background-color: #8e44ad; color: white; border: none; padding: 14px 35px; font-size: 18px; border-radius: 6px; cursor: pointer; display: block; margin: 30px auto; transition: 0.3s; font-weight: bold; letter-spacing: 1px; }
+        button:hover { background-color: #732d91; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(115, 45, 145, 0.3); }
+        .feedback-area { display: none; margin-top: 20px; font-size: 15px; }
+        .feedback-item { background: #f9f9f9; border-left: 4px solid #ccc; padding: 12px 15px; margin-bottom: 10px; border-radius: 4px; line-height: 1.6; }
+        .correct-fb { border-left-color: #27ae60; background: #eafaf1; }
+        .incorrect-fb { border-left-color: #e74c3c; background: #fdedec; }
+        mark { background-color: #ffeaa7; padding: 0 4px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+
+    <h1>🏰 沉浸式长文本：时态与代词的双重考验</h1>
+    
+    <div class="tips">
+        <b>⚠️ 答题前的高能预警：</b><br>
+        1. <b>视角切换陷阱</b>：仔细阅读上下文的时间标志。是在描述“过去的规划”（条件式），还是话题突然转到了“真实的未来”（将来时）？<br>
+        2. <b>代词陷阱</b>：如果括号里的动词带有 <b>-se</b> (如 casarse, jubilarse, darse cuenta)，变位时<b>绝对不能漏掉前面的反身代词 (me, te, se, nos, os, se)</b>，且需与主语一致！<br>
+        3. <b>不规则陷阱</b>：注意 tener, saber, poder, salir 的将来时/条件式词根。
+    </div>
+
+    <!-- 故事 1 -->
+    <div class="story-container">
+        <div class="story-title">语篇 1：理想与现实的交错 (El sueño del músico)</div>
+        Hace diez años, cuando yo <input type="text" id="q0" placeholder="estudiar"> (estudiar) en el conservatorio, mis profesores me aseguraron que yo <input type="text" id="q1" placeholder="tener"> (tener) un futuro brillante. 
+        En aquella época de estudiante, yo creía firmemente que un día <input type="text" id="q2" placeholder="convertirse"> (convertirse) en un pianista famoso en todo el mundo. 
+        Pensaba que la música clásica me <input type="text" id="q3" placeholder="dar"> (dar) todo lo que necesitaba para ser feliz y que nunca <input type="text" id="q4" placeholder="dedicarse"> (dedicarse) a otra cosa. <br><br>
+        Pero el tiempo pasó y la industria musical <input type="text" id="q5" placeholder="cambiar"> (cambiar) drásticamente. Ahora, la realidad es muy diferente. 
+        El próximo mes, yo <input type="text" id="q6" placeholder="abrir"> (abrir) mi propia escuela de música de barrio para enseñar a los niños. 
+        Sé que algunos de mis antiguos compañeros <input type="text" id="q7" placeholder="sorprenderse"> (sorprenderse) bastante cuando vean mi pequeño negocio. 
+        A veces me pregunto: si tú estuvieras en mi situación y necesitaras dinero, ¿<input type="text" id="q8" placeholder="abandonar"> (abandonar) tu sueño de dar grandes conciertos por una vida más estable?
+        
+        <div class="feedback-area" id="fb-section-1"></div>
+    </div>
+
+    <!-- 故事 2 -->
+    <div class="story-container">
+        <div class="story-title">语篇 2：外公的神秘老宅 (El secreto de la casa vieja)</div>
+        El verano pasado, mientras nosotros <input type="text" id="q9" placeholder="limpiar"> (limpiar) el polvoriento desván de la casa familiar, <input type="text" id="q10" placeholder="encontrar"> (encontrar) un testamento antiguo de mi abuelo. 
+        En el documento, él prometía que algún día nos <input type="text" id="q11" placeholder="revelar"> (revelar) el lugar exacto de sus monedas de oro. 
+        Al principio, todos pensamos que él lo <input type="text" id="q12" placeholder="decir"> (decir) como una simple broma para asustarnos. 
+        Nadie imaginaba entonces que este terreno <input type="text" id="q13" placeholder="valer"> (valer) tanto dinero en la actualidad. <br><br>
+        Sin embargo, mi hermano mayor se lo tomó muy en serio. La próxima semana, unos expertos <input type="text" id="q14" placeholder="venir"> (venir) a nuestra casa con detectores de metales. 
+        Nosotros todavía no sabemos si las <input type="text" id="q15" placeholder="encontrar"> (encontrar) o no. 
+        Mi madre advirtió que si destruimos sus rosas del jardín en la búsqueda, ella nos <input type="text" id="q16" placeholder="matar"> (matar). 
+        Yo, sinceramente, sé que la semana que viene nosotros <input type="text" id="q17" placeholder="saber"> (saber) por fin la verdad.
+        
+        <div class="feedback-area" id="fb-section-2"></div>
+    </div>
+
+    <button onclick="checkAnswers()">提交试卷并查看长文本深度解析</button>
+
+    <script>
+        const answers = [
+            // 语篇 1
+            { id: "q0", correct: ["estudiaba"], exp: "estudiaba (过未完)：交代过去的长期背景，“当时在音乐学院学习的期间”。" },
+            { id: "q1", correct: ["tendría"], exp: "tendría (条件式)：过去将来时。老师过去保证（aseguraron），我（未来）会有一个好前途。" },
+            { id: "q2", correct: ["me convertiría"], exp: "<mark>me convertiría</mark> (代词 + 条件式)：过去将来时。过去认为（creía）某天会变成...。<b>注意不要漏掉反身代词 me！</b>" },
+            { id: "q3", correct: ["daría"], exp: "daría (条件式)：过去将来时。过去认为音乐（未来）会给我一切。" },
+            { id: "q4", correct: ["me dedicaría"], exp: "<mark>me dedicaría</mark> (代词 + 条件式)：过去将来时。过去认为（未来）永远不会从事其他行业。<b>必须带上 me。</b>" },
+            { id: "q5", correct: ["cambió"], exp: "cambió (简过)：突发/已经完成的动作。时间流逝，音乐产业发生了巨大的改变。" },
+            { id: "q6", correct: ["abriré"], exp: "abriré (将来时)：<b>视角切换点！</b>“El próximo mes” 将叙事拉回真实的未来计划，必须用简单将来时。" },
+            { id: "q7", correct: ["se sorprenderán"], exp: "<mark>se sorprenderán</mark> (代词 + 将来时)：我对未来真实的预测。主语是 compañeros (复数)，<b>必须带上反身代词 se！</b>" },
+            { id: "q8", correct: ["abandonarías"], exp: "abandonarías (条件式)：虚拟语气的非真实假设主句。“如果你处在我的情况（虚拟），你会放弃吗？”" },
+            
+            // 语篇 2
+            { id: "q9", correct: ["limpiábamos"], exp: "limpiábamos (过未完)：mientras 引导的过去正在持续的背景动作。" },
+            { id: "q10", correct: ["encontramos"], exp: "encontramos (简过)：在持续的清理过程中，<b>瞬间发生</b>的动作（找到了遗嘱）。" },
+            { id: "q11", correct: ["revelaría"], exp: "revelaría (条件式)：过去将来时。外公过去承诺（prometía），某天会向我们揭露...。" },
+            { id: "q12", correct: ["decía", "diría"], exp: "decía / diría：用过未完(decía)表示当时一直这么说；用条件式(diría)表示对过去的猜测“他大概是在开玩笑吧”。两者在此处皆可接受。" },
+            { id: "q13", correct: ["valdría"], exp: "valdría (条件式)：过去将来时。过去没人能想象，这块地（如今）会值这么多钱。valer 不规则变位。" },
+            { id: "q14", correct: ["vendrán"], exp: "vendrán (将来时)：<b>视角切换点！</b>“La próxima semana”是未来的真实计划，专家将会过来。venir 不规则。" },
+            { id: "q15", correct: ["encontraremos"], exp: "encontraremos (将来时)：“我们还不知道未来是否会找到”，表达真实的未来动作。" },
+            { id: "q16", correct: ["matará"], exp: "matará (将来时)：真实条件句（Si + 现在时, 主句用将来时）。“如果我们弄坏玫瑰，她未来会杀了我们”。" },
+            { id: "q17", correct: ["sabremos"], exp: "sabremos (将来时)：下周我们终将知道真相。saber 的将来时是不规则的 sabr-。" }
+        ];
+
+        function checkAnswers() {
+            let fb1 = '', fb2 = '';
+
+            answers.forEach((q, index) => {
+                const inputEl = document.getElementById(q.id);
+                // 处理多余空格并统一转小写
+                const userAnswer = inputEl.value.trim().toLowerCase().replace(/\s+/g, ' '); 
+                const isCorrect = q.correct.includes(userAnswer);
+
+                inputEl.classList.remove('correct', 'incorrect');
+                
+                let feedbackHTML = `<div class="feedback-item ${isCorrect ? 'correct-fb' : 'incorrect-fb'}">
+                    ${isCorrect ? '✅' : '❌'} <b>空 ${index + 1}:</b> 你填的是 <span style="color:#8e44ad; font-weight:bold;">${userAnswer || '空'}</span> | 正确答案: <b>${q.correct[0]}</b> ${q.correct.length > 1 ? '(或 ' + q.correct[1] + ')' : ''} <br> 💡 <b>解析：</b>${q.exp}
+                </div>`;
+
+                if (isCorrect) inputEl.classList.add('correct');
+                else inputEl.classList.add('incorrect');
+
+                if (index <= 8) fb1 += feedbackHTML;
+                else fb2 += feedbackHTML;
+            });
+
+            const fbSec1 = document.getElementById('fb-section-1');
+            const fbSec2 = document.getElementById('fb-section-2');
+            
+            fbSec1.innerHTML = fb1;
+            fbSec1.style.display = 'block';
+            fbSec2.innerHTML = fb2;
+            fbSec2.style.display = 'block';
+            
+            // 平滑滚动到第一个反馈区域
+            fbSec1.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    </script>
+</body>
+</html>
